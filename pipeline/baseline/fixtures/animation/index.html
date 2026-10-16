@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Animation</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 sans-serif; background: #fff; color: #111; }
+    main { padding: 32px; display: flex; gap: 32px; }
+    .box { width: 80px; height: 80px; background: #2563eb; }
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+    #spinner { animation: pulse 2s ease-in-out infinite; }
+    #fader { opacity: 0; transition: opacity 1.5s linear; }
+    #fader.shown { opacity: 1; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box" id="spinner"></div>
+    <div class="box" id="fader"></div>
+  </main>
+  <!--
+    One CSS @keyframes animation (pulse, 2 s, ease-in-out, infinite) on
+    #spinner and one CSS transition on opacity (1.5 s, linear) on #fader,
+    started by adding a class once the page has loaded.
+  -->
+  <script>
+    window.addEventListener('load', () => {
+      const fader = document.getElementById('fader');
+      // Reading a layout value commits opacity: 0 so the class change transitions.
+      void fader.getBoundingClientRect();
+      fader.classList.add('shown');
+    });
+  </script>
+</body>
+</html>

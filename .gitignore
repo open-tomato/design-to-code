@@ -1,0 +1,88 @@
+
+# temp folders
+.tmp
+.old
+.scratch
+
+# ides
+.vscode
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Visual test report (jest --json output from scripts/test-visual.sh)
+visual-report.json
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+
+# Dependency directories
+node_modules/
+
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# CLI build output (bun run build)
+dist/
+
+# Storybook static build output
+storybook-static/
+
+# Vite logs files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Turbo cache
+.turbo/
+
+# macOS
+.DS_Store
+
+# >>> rafa tracking: rafa rewrites the lines up to the end marker
+.rafa/
+# <<< rafa tracking
+
+# local notes (not tracked)
+docs/
+
+# design exports and extraction outputs (heavy assets, not tracked)
+design/
+components/
+baselines/
+
+# per-project extraction configs (local only), except the tracked example
+projects/*.json
+!projects/example.json
+
+# loop progress log (written by the rafa loop, not tracked)
+progress.txt

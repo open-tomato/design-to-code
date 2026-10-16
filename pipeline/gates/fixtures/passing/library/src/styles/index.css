@@ -1,0 +1,9 @@
+/*
+ * Style entry of the library, published as `./styles.css`.
+ *
+ * Imports Tailwind CSS v4 and registers this package's sources so a
+ * consumer's build generates the utilities the components use.
+ */
+@import 'tailwindcss';
+
+@source '../';

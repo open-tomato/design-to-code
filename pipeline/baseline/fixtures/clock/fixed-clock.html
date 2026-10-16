@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fixed clock</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 monospace; background: #fff; color: #111; }
+    main { padding: 32px; }
+    .clock { display: inline-block; padding: 8px 12px; border: 1px solid #111; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Clock</h1>
+    <time class="clock" id="clock">--</time>
+  </main>
+  <!--
+    The time comes from the page's Date.now(), which page.clock installs at
+    the fixed epoch. The installed clock still advances by the milliseconds
+    the load takes, so the text stops at the minute.
+  -->
+  <script>
+    const iso = new Date(Date.now()).toISOString();
+    document.getElementById('clock').textContent = `${iso.slice(0, 10)} ${iso.slice(11, 16)}`;
+  </script>
+</body>
+</html>

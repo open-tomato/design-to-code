@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Marked fixture</title>
+  </head>
+  <body>
+    <header data-component="Header" data-level="organism">
+      <h1>Fixture</h1>
+      <form data-component="SearchField" data-level="molecule" id="search">
+        <span data-component="Icon" data-level="particle">&#128269;</span>
+        <input type="search" data-part="input" aria-label="Search">
+        <button data-component="Button" data-level="atom" data-variant-intent="primary" type="submit"><span data-part="label">Search</span></button>
+      </form>
+    </header>
+    <main>
+      <p data-doc="Button">Buttons trigger an action.</p>
+      <p data-doc="Button">Use one primary button per view.</p>
+      <button data-component="Button" data-level="atom" data-variant-intent="secondary" type="button"><span data-part="label">Cancel</span></button>
+      <button data-component="Button" data-level="atom" data-variant-intent="primary" data-state="disabled" type="button" disabled><span data-part="label">Save</span></button>
+    </main>
+  </body>
+</html>

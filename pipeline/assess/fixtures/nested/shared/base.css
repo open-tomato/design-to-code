@@ -1,0 +1,8 @@
+:root {
+  --gap: 12px;
+}
+
+main {
+  display: grid;
+  gap: var(--gap);
+}

@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "components": [
+    {
+      "name": "Button",
+      "level": "atom",
+      "page": "index.html",
+      "selector": "[data-d2c=button]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=button]"
+        },
+        {
+          "name": "hover",
+          "mode": "action",
+          "action": "hover",
+          "target": "[data-d2c=button]"
+        },
+        {
+          "name": "disabled",
+          "mode": "example",
+          "selector": "[data-d2c=button-disabled]"
+        }
+      ],
+      "variantAxes": {},
+      "parts": [],
+      "docText": [
+        "A button."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "Toolbar",
+      "level": "molecule",
+      "page": "index.html",
+      "selector": "[data-d2c=toolbar]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=toolbar]"
+        },
+        {
+          "name": "with-actions",
+          "mode": "example",
+          "selector": "[data-d2c=toolbar-actions]"
+        }
+      ],
+      "variantAxes": {},
+      "parts": [],
+      "docText": [
+        "A row of actions."
+      ],
+      "origin": "markers"
+    }
+  ]
+}

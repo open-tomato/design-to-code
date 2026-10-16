@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Live clock</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 monospace; background: #fff; color: #111; }
+    main { padding: 32px; }
+    .clock { display: inline-block; padding: 8px 12px; border: 1px solid #111; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Clock</h1>
+    <time class="clock" id="clock">--</time>
+  </main>
+  <!--
+    The time comes from a dedicated Web Worker's Date.now(). Playwright's
+    page.clock fakes the page's Date, performance.now and
+    performance.timeOrigin but not a worker's, so this reads the real wall
+    clock to the millisecond: two fresh contexts render different text.
+  -->
+  <script>
+    const source = 'postMessage(Date.now());';
+    const worker = new Worker(URL.createObjectURL(new Blob([source], { type: 'text/javascript' })));
+    worker.onmessage = (event) => {
+      const iso = new Date(event.data).toISOString();
+      document.getElementById('clock').textContent = `${iso.slice(0, 10)} ${iso.slice(11, 23)}`;
+      worker.terminate();
+    };
+  </script>
+</body>
+</html>

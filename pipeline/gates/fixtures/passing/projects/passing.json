@@ -1,0 +1,10 @@
+{
+  "slug": "passing",
+  "name": "Passing gates fixture",
+  "source": {
+    "dir": "source"
+  },
+  "target": {
+    "dir": "library"
+  }
+}

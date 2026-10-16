@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Landing v2</title>
+  <link rel="stylesheet" href="system/theme.css">
+  <style>
+    .hero { padding: var(--space-4); }
+  </style>
+  <script src="support.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+</head>
+<body>
+  <main data-dc-screen="landing">
+    <section class="hero" data-dc-component="Hero">
+      <h1>Welcome back</h1>
+      <button data-dc-component="Button" data-dc-variant="primary">Start</button>
+      <button data-dc-component="Button" data-dc-variant="ghost">Learn more</button>
+    </section>
+  </main>
+  <script type="text/babel">
+    window.dcSupport.mount('landing');
+  </script>
+</body>
+</html>

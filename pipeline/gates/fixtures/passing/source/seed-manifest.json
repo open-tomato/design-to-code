@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "components": [
+    {
+      "name": "Dot",
+      "level": "particle",
+      "page": "index.html",
+      "selector": "[data-d2c=dot]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=dot]"
+        }
+      ],
+      "variantAxes": {
+        "tone": [
+          "accent",
+          "neutral"
+        ]
+      },
+      "parts": [],
+      "docText": [
+        "A small decorative dot."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "Button",
+      "level": "atom",
+      "page": "index.html",
+      "selector": "[data-d2c=button]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=button]"
+        },
+        {
+          "name": "hover",
+          "mode": "action",
+          "action": "hover",
+          "target": "[data-d2c=button]"
+        },
+        {
+          "name": "disabled",
+          "mode": "example",
+          "selector": "[data-d2c=button-disabled]"
+        }
+      ],
+      "variantAxes": {
+        "intent": [
+          "primary",
+          "secondary"
+        ],
+        "size": [
+          "md",
+          "sm"
+        ]
+      },
+      "parts": [],
+      "docText": [
+        "A button in one of two intents and two sizes."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "Toolbar",
+      "level": "molecule",
+      "page": "index.html",
+      "selector": "[data-d2c=toolbar]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=toolbar]"
+        },
+        {
+          "name": "with-actions",
+          "mode": "example",
+          "selector": "[data-d2c=toolbar-actions]"
+        }
+      ],
+      "variantAxes": {
+        "density": [
+          "comfortable",
+          "compact"
+        ]
+      },
+      "parts": [
+        "dot"
+      ],
+      "docText": [
+        "A row of actions led by a status dot."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "Header",
+      "level": "organism",
+      "page": "index.html",
+      "selector": "[data-d2c=header]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=header]"
+        }
+      ],
+      "variantAxes": {
+        "elevation": [
+          "flat",
+          "raised"
+        ]
+      },
+      "parts": [
+        "menu",
+        "title"
+      ],
+      "docText": [
+        "A page header: a title and a menu button."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "Stack",
+      "level": "template",
+      "page": "index.html",
+      "selector": "[data-d2c=stack]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=stack]"
+        }
+      ],
+      "variantAxes": {
+        "gap": [
+          "md",
+          "sm"
+        ]
+      },
+      "parts": [],
+      "docText": [
+        "Stacks its children in a column."
+      ],
+      "origin": "markers"
+    },
+    {
+      "name": "PageLayout",
+      "level": "layout",
+      "page": "index.html",
+      "selector": "[data-d2c=page-layout]",
+      "examples": [],
+      "states": [
+        {
+          "name": "default",
+          "mode": "example",
+          "selector": "[data-d2c=page-layout]"
+        }
+      ],
+      "variantAxes": {
+        "width": [
+          "full",
+          "narrow"
+        ]
+      },
+      "parts": [],
+      "docText": [
+        "The page frame."
+      ],
+      "origin": "markers"
+    }
+  ]
+}

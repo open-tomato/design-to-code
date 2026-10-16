@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #1f6feb;
+  --color-surface: #ffffff;
+  --color-text: #1c2128;
+  --space-2: 8px;
+  --space-4: 16px;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+}

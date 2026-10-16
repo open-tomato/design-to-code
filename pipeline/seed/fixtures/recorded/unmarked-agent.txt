@@ -1,0 +1,129 @@
+I read the outlines of the two unmarked pages, index.html and gallery.html,
+and the discovery notes. The candidates below cover the repeated and
+clearly bounded blocks on each page.
+
+```json
+{
+  "components": [
+    {
+      "name": "Menu",
+      "level": "molecule",
+      "page": "index.html",
+      "selector": ".menu",
+      "examples": [],
+      "states": [
+        { "name": "hover", "mode": "action", "action": "hover", "target": ".menu-label" }
+      ],
+      "variantAxes": {},
+      "parts": ["label", "list"],
+      "docText": ["Menu"]
+    },
+    {
+      "name": "Button",
+      "level": "atom",
+      "page": "index.html",
+      "selector": ".search .btn",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": [],
+      "docText": ["Search"]
+    },
+    {
+      "name": "Promo",
+      "level": "organism",
+      "page": "index.html",
+      "selector": ".promo",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": ["text", "title"],
+      "docText": ["Spring sale", "Every print is half price until Sunday."]
+    },
+    {
+      "name": "Card",
+      "level": "molecule",
+      "page": "gallery.html",
+      "selector": ".grid > .card:first-child",
+      "examples": [".grid > .card"],
+      "states": [],
+      "variantAxes": {},
+      "parts": ["text", "title"],
+      "docText": ["A harbour at dawn."]
+    },
+    {
+      "name": "CardTitle",
+      "level": "atom",
+      "page": "gallery.html",
+      "selector": ".grid > .card:first-child .card-title",
+      "examples": [".card-title"],
+      "states": [],
+      "variantAxes": {},
+      "parts": [],
+      "docText": ["Harbour"]
+    },
+    {
+      "name": "GalleryCard",
+      "level": "molecule",
+      "page": "gallery.html",
+      "selector": ".card",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": [],
+      "docText": []
+    },
+    {
+      "name": "GalleryPromo",
+      "level": "organism",
+      "page": "gallery.html",
+      "selector": ".promo",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": [],
+      "docText": ["Spring sale"]
+    },
+    {
+      "name": "SearchBar",
+      "level": "atom",
+      "page": "index.html",
+      "selector": ".search",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": ["input"],
+      "docText": []
+    },
+    {
+      "name": "FilterButton",
+      "level": "atom",
+      "page": "gallery.html",
+      "selector": ".filter",
+      "examples": [],
+      "states": [
+        { "name": "active", "mode": "example", "selector": ".filter.is-active" },
+        { "name": "pressed", "mode": "action", "action": "press", "target": ".filter-icon" }
+      ],
+      "variantAxes": {},
+      "parts": [],
+      "docText": ["All prints"]
+    },
+    {
+      "name": "Footer",
+      "level": "organism",
+      "page": "index.html",
+      "selector": ".site-footer",
+      "examples": [],
+      "states": [],
+      "variantAxes": {},
+      "parts": [],
+      "docText": ["Fixture footer"],
+      "confidence": 0.8
+    }
+  ]
+}
+```
+
+Every selector above was chosen from the outline's classes; the Menu hover
+state relies on a CSS rule, so it is driven as an action.

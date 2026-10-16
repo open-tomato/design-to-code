@@ -1,0 +1,4 @@
+# Binaries reviewed for privacy: tiny synthetic export fixtures (HTML pages only).
+daad79a35b440a14f6083f2c726fe006d2427808c24dbf494cc7971973ff40b8  pipeline/import/fixtures/case-collision-file.zip
+8cdb79ab25a6dabf91c371be9cb6a77d18e2b39ec63802b27b268957c980a533  pipeline/import/fixtures/case-collision-folder.zip
+5e1dfdcbb292a97fcaba26f25accc5a404475cfa9c168dbb5b474cfdafbb572e  pipeline/import/fixtures/finder-export.zip

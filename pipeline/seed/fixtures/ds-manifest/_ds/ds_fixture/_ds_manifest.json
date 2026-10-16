@@ -1,0 +1,30 @@
+{
+  "id": "ds_fixture",
+  "name": "Seed fixture design system",
+  "components": [
+    {
+      "name": "Button",
+      "level": "atom",
+      "description": "Buttons trigger an action.",
+      "variants": { "intent": ["primary", "secondary"] }
+    },
+    {
+      "name": "Tag",
+      "level": "atom",
+      "description": "Tags label an item's status.",
+      "variants": { "tone": ["neutral", "warning"] }
+    },
+    {
+      "name": "Breadcrumbs",
+      "level": "molecule",
+      "description": "Breadcrumbs show where the page sits.",
+      "page": "index.html",
+      "selector": "#breadcrumbs"
+    },
+    {
+      "name": "Tooltip",
+      "level": "atom",
+      "description": "Tooltips are listed but appear on no page."
+    }
+  ]
+}

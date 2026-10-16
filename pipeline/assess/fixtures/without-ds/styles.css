@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--ink);
+}
+
+.site-header {
+  border-bottom: 2px solid var(--brand);
+}

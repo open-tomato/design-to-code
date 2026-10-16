@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unmarked fixture</title>
+    <style>
+      .menu { display: inline-block; padding: 4px 8px; }
+      .menu .menu-list { display: none; }
+      .menu:hover { background: #eef; }
+      .menu:hover .menu-list { display: block; }
+      .btn { padding: 4px 12px; }
+      .promo { padding: 16px; background: #fe9; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="menu">
+        <span class="menu-label">Menu</span>
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search">
+        <input class="search-input" type="search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <section class="promo">
+        <h2 class="promo-title">Spring sale</h2>
+        <p class="promo-text">Every print is half price until Sunday.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Fixture footer</p>
+    </footer>
+  </body>
+</html>
