@@ -1,42 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "design-to-code tool",
+  "extends": "@open-tomato/typescript-config/react",
   "compilerOptions": {
-    // Environment setup & latest features
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "target": "ESNext",
     "module": "Preserve",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    // "resolveJsonModule": true,
     "types": [
       "node",
       "bun"
     ],
-    // Bundler mode
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-    // Best practices
-    "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    // Some stricter flags (disabled by default)
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "useDefineForClassFields": true,
+    // The TypeScript sources import the tool's plain-ESM `.mjs` modules
+    // (the lint rule, the story checker, the library ESLint config).
+    "allowJs": true,
+    // This tool is a CLI bundled by `bun build` and never emits
+    // declarations. With `allowJs` above, isolatedDeclarations is refused
+    // and the declaration checks fail on the inferred types of the `.mjs`
+    // ESLint configs, so both are off.
+    "declaration": false,
+    "isolatedDeclarations": false,
+    "allowImportingTsExtensions": true
   },
   "include": [
     "bin",
